@@ -27,7 +27,7 @@ class App extends Component {
                 tags,
             }
             }`;
-        request('https://mobileapi.wp.pl/v1/graphql?', query).then(data => console.log(data));
+        request('https://mobileapi.wp.pl/v1/graphql', query).then(data => console.log(data));
     }
 
     componentDidMount() {
